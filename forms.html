@@ -7,61 +7,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Tab</title>
 </head>
-<h1>Forms</h1>>
-<!-- action sends data to a specific place, like a server -->
-<form action='/virus'>
-    <!-- more types at https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
-    <input type="text" placeholder="username" name="username">
-    <input type="button">
-    <input type="checkbox">
-    <input type="password" placeholder="password" name="password">
-    <!-- place holder creates "ghost text" if nothing entered -->
-    <input type="email" placeholder="SmithJ@gmail.com" name="email">
-    <input type="color" , name="colorChoice">
-    <input type="search" name="search">
-    <input type="number" placeholder="enter number" name="number">
-    <input type="time" name="time">
-
-    <h3>Labels</h3>
-    <table>
-        <thead>
-            <tr>
-                <th rowspan="2" colspan="1">Question</th>
-                <th colspan='2'>answer</th>
-            </tr>
-            <th>Yes</th>
-            <th>No</th>
-        </thead>
-
-        <tr>
-            <td>
-                <!-- for allows it to "connect" the label with an input, which uses id -->
-                <label for='Nintendo'>Do you like Nintendo?</label>
-                <input type="radio" name="nintendoQuestion" id='Nintendo'>
-                <input type="radio" name="nintendoSelection" id='Nintendo'>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label for='stupid'>Do you like being stupid?</label>
-                <input type="radio" name="stupidQuestion" id="stupid">
-                <input type="radio" name="stupidSelection" id=stupid>
-            </td>
-        </tr>
-    </table>
-    <h3>Buttons</h3>
-    <button>Click me for a virus!</button>
-</form>
-<h3>search</h3>
-<form action="https://www.reddit.com/search">
-    <!-- actual reddit server has a name 'q' -->
-    <input type="text" name="q">
-    <button type="button">Search</button>
-</form>
-
-
 
 <body>
+    <h1>Forms</h1>>
+    <!-- action sends data to a specific place, like a server -->
+    <form action='/virus'>
+        <!-- more types at https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+        <input type="text" placeholder="username" name="username">
+        <input type="button">
+        <input type="checkbox">
+        <input type="password" placeholder="password" name="password">
+        <!-- place holder creates "ghost text" if nothing entered -->
+        <input type="email" placeholder="SmithJ@gmail.com" name="email">
+        <input type="color" , name="colorChoice">
+        <input type="search" name="search">
+        <input type="number" placeholder="enter number" name="number">
+        <input type="time" name="time">
+
+        <h3>Labels</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2" colspan="1">Question</th>
+                    <th colspan='2'>answer</th>
+                </tr>
+                <th>Yes</th>
+                <th>No</th>
+            </thead>
+
+            <tr>
+                <td>
+                    <!-- for allows it to "connect" the label with an input, which uses id -->
+                    <label for='Nintendo'>Do you like Nintendo?</label>
+                    <input type="radio" name="nintendoQuestion" id='Nintendo' value="yes">
+                    <input type="radio" name="nintendoSelection" id='Nintendo' value="no">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='stupid'>Do you like being stupid?</label>
+                    <input type="radio" name="stupidQuestion" id="stupid">
+                    <input type="radio" name="stupidSelection" id=stupid>
+                </td>
+            </tr>
+        </table>
+        <h3>Buttons</h3>
+        <button>Click me for a virus!</button>
+    </form>
+    <h3>Search Reddit</h3>
+    <form action="https://www.reddit.com/search">
+        <!-- actual reddit server has a name 'q' -->
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+    <h3>Search Google</h3>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <h3>Search Youtube</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search Youtube</button>
+    </form>
+
+
+
+
+
 
 </body>
 

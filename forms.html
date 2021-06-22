@@ -39,20 +39,59 @@
                 <td>
                     <!-- for allows it to "connect" the label with an input, which uses id -->
                     <label for='Nintendo'>Do you like Nintendo?</label>
+                    <!-- radi omust have same name inroder to be put in a group -->
                     <input type="radio" name="nintendoQuestion" id='Nintendo' value="yes">
-                    <input type="radio" name="nintendoSelection" id='Nintendo' value="no">
+                    <input type="radio" name="nintendoQuestion" id='Nintendo' value="no">
                 </td>
             </tr>
             <tr>
                 <td>
                     <label for='stupid'>Do you like being stupid?</label>
-                    <input type="radio" name="stupidQuestion" id="stupid">
-                    <input type="radio" name="stupidSelection" id=stupid>
+                    <input type="radio" name="stupidQuestion" id="stupid" value="yes">
+                    <input type="radio" name="stupidQuestion" id=stupid value="no">
                 </td>
             </tr>
         </table>
         <h3>Buttons</h3>
         <button>Click me for a virus!</button>
+    </form>
+    <h3>Choose your Mario Character</h3>
+    <form action="/Character">
+        <div>
+            <select name="character" id="charcter">
+                <option value="">--Choose a charcter from the Mario Universe--</option>
+                <option value="mario">Mario</option>
+                <option value="luigi">Luigi</option>
+                <option value="peach">Peach</option>
+                <option value="toad">Toad</option>
+                <option value="bowser">Bowser</option>
+
+
+            </select>
+        </div>
+        <div>
+            <label for="confidence">how good are you at smash?</label>
+            <!-- value sets a default number -->
+            <input type="range" min="0" max="10" step="1" value="5" id="confidence" name="confidence">
+        </div>
+        <textarea placeholder="Tell us your story" rows="10" cols="30" name="story"></textarea>
+        <button>Select!</button>
+    </form>
+    <h3>Validations Demo</h3>
+    <form action="/dummy">
+        <!-- required makes chrom pop up an error if input is not inputted -->
+        <div>
+            <label for="firstName">First Name</label>
+            <input id="firstName" type="text" placeholder="First Name" name="firstName" required minlength="2"
+                maxlength="20">
+        </div>
+        <div>
+            <label for="lastName">Last Name</label>
+            <input id="lastName" type="text" placeholder="Last Name" name="LastName" required minlength="3"
+                maxlength="20">
+        </div>
+        <button>Submit</button>
+
     </form>
     <h3>Search Reddit</h3>
     <form action="https://www.reddit.com/search">

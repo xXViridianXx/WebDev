@@ -1,3 +1,30 @@
+.title{
+    text-align: center;
+    color: white;
+    background-color: #402481;
+    width: 100%;
+    font-weight: 600;
+    font-family: 'papyrus';
+    text-decoration: rgb(164, 214, 27) underline solid;
+    letter-spacing: 10px;
+}
+/* removes underline from links */
+a{
+    text-decoration: none;
+    color: white;
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(62, 87, 63);
+}
+
 .gameList{
-    color: red;
+    color: white;
+}
+
+image{
+    align-self: center;
 }

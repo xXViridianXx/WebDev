@@ -1,11 +1,11 @@
 .title{
     text-align: center;
     color: white;
-    background-color: #402481;
+    background-color: #000000;
     width: 100%;
     font-weight: 600;
     font-family: 'papyrus';
-    text-decoration: rgb(164, 214, 27) underline solid;
+    text-decoration: #fca311 underline solid;
     letter-spacing: 10px;
 }
 /* removes underline from links */
@@ -14,17 +14,50 @@ a{
     color: white;
 }
 
+.links {
+    text-align: center;
+}
+
+.links a:hover {
+    color: #14213d;
+    background-color: #ffffff;
+    font-size: large;
+    font-weight: 700;
+}
+
+.links a:active {
+    background-color: #fca311;
+}
+
 p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+p::first-letter {
+    font-size: 50px;
+}
+
+p::first-line {
+    color:#fca311;
+}
+
+*::selection {
+    background-color:black;
+}
+
+* {
+    color:white;
+}
 body{
-    background-color: rgb(62, 87, 63);
+    background-color: #14213d;
 }
 
 .gameList{
     color: white;
 }
 
-image{
-    align-self: center;
+#zeldaPic{
+    margin-left: auato;
+    margin-right: auto;
+    width: 100%;
 }

@@ -7,6 +7,13 @@
     font-family: 'papyrus';
     text-decoration: #fca311 underline solid;
     letter-spacing: 10px;
+    border-color: #fca311;
+    border-style: solid;
+    border-left-width: 5px;
+    border-right-width: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    box-sizing: border-box;
 }
 /* removes underline from links */
 a{
@@ -23,6 +30,13 @@ a{
     background-color: #ffffff;
     font-size: large;
     font-weight: 700;
+      border-color: #0f9964;
+    border-style: solid;
+    border-left-width: 5px;
+    border-right-width: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+}
 }
 
 .links a:active {

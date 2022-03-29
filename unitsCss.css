@@ -1,0 +1,37 @@
+.sPercent {
+
+    background-color: rgb(113, 93, 133);
+    width: 800px;
+    height: 800px;
+}
+
+.dPercent {
+
+    background-color: aqua;
+    /*be 50% as wide and high as parent——section*/
+    width: 50%;
+    height: 50%;
+}
+
+.sEm {
+
+    background-color: blue;
+    width: 800px;
+    height: 800px;
+}
+
+.emH {
+
+    background-color: aquamarine;
+    font-size: 2em;
+    margin-left: 1em;
+
+}
+
+button {
+
+    font-size: 6em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 1em;
+}

@@ -1,0 +1,33 @@
+h1 {
+
+    background-color: aqua;
+    border: 1px solid black;
+    /*adding display allows you to make inline*/
+    display: inline;
+}
+
+span {
+
+    background-color: rgb(148, 148, 151);
+    border: 1px dotted black;
+    display: block;
+}
+
+.div1 {
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    border: 1px solid black;
+    /*inline-block puts a little space between*/
+    /*display: none; makes the thing invisible*/
+    display: inline-block;
+
+}
+
+.div2 {
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    border: 1px solid black;
+
+}
